@@ -13,7 +13,7 @@
     <h2>Livros na Categoria:</h2>
     <ul>
         @forelse($livros as $livro)
-            <li>
+            <li>  
                 <a href="{{ route('livros.show', $livro->id) }}">{{ $livro->titulo }}</a>
             </li>
         @empty
